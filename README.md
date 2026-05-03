@@ -1,3 +1,6 @@
+## Demo Video
+
+Demo video: https://youtu.be/eFiXvNwGitM 
 # API Security Auditor
 
 API Security Auditor is a Dockerized CECS 478 security project that demonstrates automated detection of common web API security problems. The project includes a local target API with secure and intentionally vulnerable endpoints, plus a scanner that probes the API, logs behavior, and exports reproducible JSON/CSV evidence.

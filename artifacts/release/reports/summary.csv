@@ -1,0 +1,5 @@
+test,status_code,passed,severity,finding
+happy_path_secure_login,200,True,info,Secure login accepted valid credentials
+sql_injection_probe,200,False,high,Possible injection bypass accepted by vulnerable endpoint
+error_leakage_probe,401,False,medium,Response appears to leak implementation details
+rate_limit_probe,429,True,info,No issue detected

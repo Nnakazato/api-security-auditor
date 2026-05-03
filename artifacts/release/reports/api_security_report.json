@@ -1,0 +1,36 @@
+{
+  "total_tests": 4,
+  "failed_tests": 2,
+  "high_findings": 1,
+  "medium_findings": 1,
+  "findings": [
+    {
+      "test": "happy_path_secure_login",
+      "status_code": 200,
+      "passed": true,
+      "severity": "info",
+      "finding": "Secure login accepted valid credentials"
+    },
+    {
+      "test": "sql_injection_probe",
+      "status_code": 200,
+      "passed": false,
+      "severity": "high",
+      "finding": "Possible injection bypass accepted by vulnerable endpoint"
+    },
+    {
+      "test": "error_leakage_probe",
+      "status_code": 401,
+      "passed": false,
+      "severity": "medium",
+      "finding": "Response appears to leak implementation details"
+    },
+    {
+      "test": "rate_limit_probe",
+      "status_code": 429,
+      "passed": true,
+      "severity": "info",
+      "finding": "No issue detected"
+    }
+  ]
+}
