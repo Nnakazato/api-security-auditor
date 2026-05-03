@@ -1,0 +1,6 @@
+flask==3.0.3
+requests==2.32.3
+pytest==8.3.3
+pytest-cov==5.0.0
+matplotlib==3.9.2
+werkzeug==3.0.4

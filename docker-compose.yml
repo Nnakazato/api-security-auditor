@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    container_name: api-security-target
+    command: python api_server/app.py
+    ports:
+      - "5001:5000"
+    environment:
+      - FLASK_ENV=production
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
