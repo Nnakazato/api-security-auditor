@@ -2,7 +2,9 @@
 
 clean:
 	docker compose down -v --remove-orphans || true
-	rm -rf artifacts/release/logs/* artifacts/release/reports/* artifacts/release/charts/*
+	rm -rf artifacts/release/logs/*
+	rm -rf artifacts/release/reports/*
+	rm -rf artifacts/release/charts/*
 
 up:
 	docker compose up -d --build
